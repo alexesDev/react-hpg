@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none;
+    @apply dark:text-gray-300 dark:bg-gray-600 dark:border-gray-700;
+  }
+}
