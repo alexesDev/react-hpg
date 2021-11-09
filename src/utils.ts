@@ -5,3 +5,5 @@ export const times = <T>(n: number, fn: (n: number) => T) => {
   }
   return result;
 };
+
+export const round3 = (v: number) => Math.round(v * 1000) / 1000;
