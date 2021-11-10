@@ -35,11 +35,11 @@ const App = () => {
           <div />
           {ELEMENTS.map((ce) => (
             <div key={`${ce}input`}>
-              <input value={values[ce]} className="input" />
+              <input value={values[ce]} className="input" type="number" />
             </div>
           ))}
           <div>
-            <input value={values.Cl} className="input" />
+            <input value={values.Cl} className="input" type="number" />
           </div>
           <div>
             <Input />
@@ -91,7 +91,7 @@ const App = () => {
                 return (
                   <React.Fragment key={e.name}>
                     <div>{e.name}</div>
-                    <Input />
+                    <input className="input" value={e.defaultFraction} type="number" />
                   </React.Fragment>
                 );
               })}
